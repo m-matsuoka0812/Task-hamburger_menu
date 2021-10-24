@@ -1,0 +1,49 @@
+.l-sidebar__menu {
+    font-family: "roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    color: #707070;
+    padding-top: 82px;
+    padding-bottom: 85px;
+    padding-left: 12.5%;
+}
+ul {
+    >li {
+        >a {
+            font-family: "roboto", sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #707070;
+            padding-left: 12.5%;
+        }
+        >ul {
+            padding: 40px 0 17px 18%;
+            >li {
+                padding-bottom: 23px;
+                >a {
+                    font-family: "m-plus-1m", sans-serif;
+                    font-weight: normal;
+                    font-size: 1.25rem; 
+                    color: #707070;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.l-sidebar {
+    @include tab {
+        padding-top: 212px;
+        height: 1826px;
+    };
+    @include sp {
+        height: 2716px;
+    };
+    >a {
+        @include tab {
+            display: none;
+        };
+    }
+}

@@ -1,0 +1,233 @@
+//front-page設定
+
+.p-front {
+    &__top {
+        height: 530px;
+        max-width: 100%;
+        background-image: url("../img/front-page-ダミーサイト.jpg");
+        background-size: cover;
+        background-position: center;
+        @include tab {
+            height: 285px;
+        }
+        p {
+            font-family: "m-plus-1m", sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #fff;
+            padding-left: 86px;
+            padding-top: 231px;
+            margin: 0;
+            @include tab {
+                padding-top: 119px;
+                font-size: 2.25rem;
+            };
+            @include sp {
+                padding-left: 6.7%;
+            }
+        }
+    }
+}
+
+.p-front {
+    &__flex {
+        height: 1447px;
+        display: flex;
+        padding-top: 8.3%;
+        padding-bottom: 9.3%;
+        @include tab {
+            height: 761px;
+            padding: 5.25% 0;
+        };
+        @include sp {
+            display: block;
+            height: 1374px;
+            padding: 20px 5.3% 49px 5.3%;
+        };
+        &__section {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        .takeout {
+            background-image: url("../img/front_flex_left.jpg");
+            background-size: cover;
+            background-position: center;
+            margin-right: 2.5%;
+            margin-left: 7%;
+            @include tab {
+                margin: 0 4.8%;
+            };
+            @include sp {
+                height: 50%;
+                margin: 0 0 20px 0;
+            };
+        }
+        .eatin {
+            background-image: url("../img/front_flex_right.jpg");
+            background-size: cover;
+            background-position: center;
+            margin-left: 2.5%;
+            margin-right: 7%;
+            @include tab {
+                margin-right: 4.8%;
+            };
+            @include sp {
+                height: 50%;
+                margin: 0;
+            };
+        }
+        h2 {
+            font-family: "roboto", sans-serif;
+            position: relative;
+            color: #fff;
+            font-size: 5vw; /*vw単位にすることで画面サイズに準ずる*/
+            font-weight: 600;
+            padding-top: 20px;
+            padding-left: 20px;
+            margin: 0;
+            @include tab {
+                font-size: 2.75rem;
+                padding-top: 13px;
+                padding-left: 14px;
+            };
+            @include sp {
+                font-size: 2.56rem;
+                padding-top: 11px;
+                padding-left: 10px;
+            };
+            &::after {
+                position: absolute;
+                top: 140px;
+                left: 26px;
+                content: "";
+                width: 60px;
+                height: 6px;
+                background-color: #fff;
+                padding-left: 20px;
+                @include tab {
+                    top: 91.5px;
+                    left: 14.3px;
+                    width: 35.9px;
+                    height: 4px;
+                };
+                @include sp {
+                    top: 86.3px;
+                    left: 13.5px;
+                    width: 33.9px;
+                };
+            }
+        }
+        .p-box {
+            position: absolute;
+            display: block;
+            width: 93.6%;
+            left: 3.2%;
+            right: 3.2%;
+            bottom: 1.7%;
+            @include sp {
+                left: 3%;
+                right: 3%;
+                bottom: 3%;
+            }
+        }   
+    }
+}
+
+.p-front {
+    &__map {
+        width: 100%;
+        height: 649px;
+        position: relative;
+        overflow: hidden;
+        @include tab {
+            height: 415px;
+        };
+        @include sp {
+            height: 691px;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            @include sp {
+                height: 691px;
+                margin: 0 auto;
+                display: block;
+                max-width: 100%
+            };
+        }
+        &__section {
+            width: 60%;
+            height: 649px;
+            position: absolute;
+            top: 0;
+            z-index: 15;
+            @include tab {
+                width: 100%;
+                height: 415px;
+            };
+            h3 {
+                font-family: "m-plus-1m", sans-serif;
+                font-style: bold;
+                color: #fff;
+                font-size: 2.25rem; /*vw単位にすることで画面サイズに準ずる*/
+                font-weight: normal;
+                padding: 83px 0 0 12.5%;
+                @include tab {
+                    font-size: 1.875rem;
+                    padding: 40px 0 0 5%;
+                };
+                @include sp {
+                    padding: 40px 0 0 11.2%; 
+                };
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 90px;
+                    height: 3px;
+                    background-color: #fff;
+                    left: 12.5%;
+                    top: 189.5px;
+                    @include tab {
+                        width: 75px;
+                        left: 5%;
+                        top: 90px;
+                    };
+                    @include sp {
+                        left: 11.2%;
+                        top: 102px;
+                        height: 2px;
+                    };
+                }
+            }
+            .p-front__map__text{
+                font-family: "m-plus-1m", sans-serif;
+                position: absolute;
+                top: 39%;
+                left: 12.5%;
+                right: 14.1%;
+                bottom: 6%;
+                color: #fff;
+                line-height: 1.5;
+                font-size: 1vw; /*vw単位にすることで画面サイズに準ずる*/
+                text-align: justify;
+                @include tab {
+                    top: 26.5%;
+                    left: 5%;
+                    right: 3.5%;
+                    bottom: 0;
+                    font-size: 0.875rem;
+                };
+                @include sp {
+                    top: 110px;
+                    right: 10.6%;
+                    left: 10.6%;
+                    bottom: 7.4%;
+                };
+            }
+        }
+    }
+}

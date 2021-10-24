@@ -1,0 +1,80 @@
+//single.html内ボタン
+
+.c-button {
+    width: 100%;
+    padding-left: 5.2%;
+    padding-bottom: 60px;
+    @include tab {
+        padding-left: 7.2%;
+    };
+    @include sp {
+        padding: 0 5.3% 30px 5.3%;
+    };
+    button {
+        background-color: #F2EDE9;
+        border-radius: 30px;
+        a {
+            display: block;
+            width: 429px;
+            color: #3C2A10;
+            font-family: "m-plus-1m", sans-serif;
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 104px;
+            text-align: center;
+            @include sp {
+                width: 335px;
+                line-height: 77px;
+            }
+        }
+    }
+    &__comment {
+        padding-left: 5.2%;
+        padding-bottom: 353px;
+        font-size: 1rem;
+        font-family: "m-plus-1m", sans-serif;
+        font-weight: bold;
+        color: #3C2A10;
+        @include tab {
+            padding-left: 7.2%;
+            padding-bottom: 228px;
+            @include sp {
+                padding-left: 5.3%;
+                padding-bottom: 177px;
+            }
+        };
+    }
+}
+
+//sidebarメニュー×ボタン
+
+.c-button {
+    &__close {
+        cursor: pointer;
+        &.is-open {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            &::before {
+                position: absolute;
+                top: 25px;
+                transform: rotate(45deg);
+                content: "";
+                background-color: #707070;
+                width: 50px;
+                height: 5px;
+            }
+            &::after {
+                position: absolute;
+                top: 25px;
+                transform: rotate(-45deg);
+                content: "";
+                background-color: #707070;
+                width: 50px;
+                height: 5px;
+            }
+        }
+    }
+}

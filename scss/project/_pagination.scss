@@ -1,0 +1,126 @@
+//archive,archive-search設定
+
+.p-pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #707070;
+    padding: 75.5px 0 64px 0;
+    @include tab {
+        padding-bottom: 34px;
+    };
+    @include sp {
+        padding-top: 39.5px;
+        padding-bottom: 31px;
+    }
+    > p {
+        font-family: "roboto", sans-serif;
+        font-size: 1rem;
+        padding: 0 19.3px 0 0;
+        @include sp {
+            display: none;
+        };   
+    }
+    ul {
+        display: flex;
+        width: auto;
+        flex-direction: row;        
+        justify-content: center; 
+        align-items: center;
+        @include sp {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 20.2px
+        };
+        .p-paginaition__page {
+            border: solid 1px #3C2B1C;
+            margin-right: 15px;
+            @include sp {
+                display: flex;          
+                flex-direction: row; 
+                justify-content: space-between; 
+                align-items: center;
+            };
+            &:first-of-type, &:last-of-type {
+                border: none;
+                width: auto;
+                height: auto;
+            }
+            &:nth-of-type(2){
+                background-color: #3C2B1C;
+                @include sp {
+                    display: none;
+                }
+                a{
+                    color: #FFFFFF;
+                    @include sp {
+                        display: none;
+                    }
+                }
+            }
+            a {
+                font-family: "roboto", sans-serif;
+                font-size: 1rem;
+                display: block;
+                color: #707070;
+                padding: 7px 13px;
+                @include sp {
+                    font-family: "m-plus-1m", sans-serif;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                /*p {
+                    display: none;
+                    @include sp {
+                        font-family: "m-plus-1m", sans-serif;
+                        font-size: 1rem;
+                        display: block;
+                    };
+                }*/
+            }
+            &:not(:first-of-type):not(:last-of-type) {
+                display: flex;
+                @include sp {
+                    display: none
+                };
+            };
+            &:first-of-type {
+                margin-right: 17.2px;
+                @include sp {
+                    margin: 0;
+                };
+                p {
+                    display: none;
+                    @include sp {
+                        display: block;
+                        font-family: "m-plus-1m", sans-serif;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: #707070;
+                        margin-left: 7.3px;
+                    };
+                }
+            }
+            &:last-of-type {
+                margin-left: 4.3px;
+                @include sp {
+                    margin: 0;
+                }
+                p {
+                    display: none;
+                    @include sp {
+                        display: block;
+                        font-family: "m-plus-1m", sans-serif;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: #707070;
+                        margin-right: 7.3px
+                    };
+                }
+            }
+        }
+    }
+}

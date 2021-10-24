@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hamburger menu</title>
+        <meta name="description" content="ハンバーガーメニュー作成課題">
+
+         <!-- Adobe Fonts -->
+         <script>
+            (function(d) {
+              var config = {
+                kitId: 'phg4osz',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+          </script>
+
+        <!-- CSS -->                 
+        <!--<link rel="stylesheet" href="https://raw.githubusercontent.com/nicolas-cusan/destyle.css/master/destyle.min.css">-->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/JavaScript.js"></script> -->
+       
+    </head>
+    
+    <body>
+        
+        <div class="l-contents">
+            <article class="l-contents__left">
+                <!-- ハンバーガーメニュー -->
+                <div class="p-bar">
+                    <button class="p-bar__button">Menu</button>
+                </div>
+                <!-- 追加分 -->
+                <div class="l-header">
+                    <div class="l-header__left">
+                        <a href="#">
+                            <h1>Hamburger</h1>
+                        </a>
+                    </div>
+                    <form class="l-header__form">
+                        <input class="l-header__form__box fas fa-search fa-lg" type="search" value="&#xf002"> <!-- icon追加 -->
+                        <input class="l-header__form__button" type="submit" value="検索">
+                    </form>
+                </div>
+                
+                <div class="l-main">
+                    <div class="p-front__top">
+                        <p>ダミーサイト</p>
+                    </div>
+                    
+                    <div class="p-front__flex">
+                        <div class="p-front__flex__section takeout">
+                            <a href="#">
+                                <h2>Take Out</h2>
+                            </a>
+                            <div class="p-box">
+                                <div class="c-wrap">
+                                    <h4>Take Out</h4>
+                                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                                </div>
+                                <div class="c-wrap">
+                                    <h4>Take Out</h4>
+                                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-front__flex__section eatin">
+                            <a href="#">
+                                <h2>Eat In</h2>
+                            </a>
+                            <div class="p-box">
+                                <div class="c-wrap">
+                                    <h4>Take Out</h4>
+                                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                                </div>
+                                <div class="c-wrap">
+                                    <h4>Take Out</h4>
+                                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-front__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1353.3813275356256!2d139.74347095297944!3d35.658857938882164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1633696988743!5m2!1sja!2sjp" width="1553" height="649" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="c-layer1">
+                            <div class="c-layer2"></div>
+                        </div>
+                        <div class="p-front__map__section">
+                            <h3>見出しが入ります</h3>
+                            <p class="p-front__map__text">
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+        
+            <aside class="l-contents__right">
+                <div class="l-sidebar">
+                    <div class="c-button__close"></div> <!-- ハンバーガーメニュー追加 -->
+                    <a class="l-sidebar__menu" href="#">Menu</a>
+                    <ul>
+                        <li><a class="l-sidebar__menu__list" href="#">バーガー</a>
+                            <ul>
+                                <li><a href="#">ハンバーガー</a></li>
+                                <li><a href="#">チーズハンバーガー</a></li>
+                                <li><a href="#">テリヤキハンバーガー</a></li>
+                                <li><a href="#">アボガドハンバーガー</a></li>
+                                <li><a href="#">フィッシュハンバーガー</a></li>
+                                <li><a href="#">ベーコンハンバーガー</a></li>
+                                <li><a href="#">チキンハンバーガー</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a lass="l-sidebar__menu__list" href="#">サイド</a>
+                            <ul>
+                                <li><a href="#">ポテト</a></li>
+                                <li><a href="#">サラダ</a></li>
+                                <li><a href="#">ナゲット</a></li>
+                                <li><a href="#">コーン</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a lass="l-sidebar__menu__list" href="#">ドリンク</a>
+                            <ul>
+                                <li><a href="#">コーラ</a></li>
+                                <li><a href="#">ファンタ</a></li>
+                                <li><a href="#">オレンジ</a></li>
+                                <li><a href="#">アップル</a></li>
+                                <li><a href="#">紅茶（Ice/Hot）</a></li>
+                                <li><a href="#">コーヒー（Ice/Hot）</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <footer class="l-footer">
+            <div class="l-footer__section">
+                <a href="#">ショップ情報</a>
+                <a href="#">ヒストリー</a>
+            </div>
+            <small>Copyright: RaiseTech</small>
+        </footer>
+        
+        <script>
+            
+            $('.p-bar__button, .c-button__close').click(function(){
+                $('.c-button__close, .l-contents__right, .l-contents__left, .l-contents').toggleClass('is-open');
+            });
+
+            let timer = 0;
+            let currentWidth = window.innerWidth;
+                $(window).resize(function(){
+                    if (currentWidth == window.innerWidth) {
+                        return;
+                    }
+                    if (timer > 0) {
+                        clearTimeout(timer);
+                    }
+
+                    timer = setTimeout(function () {
+                        location.reload();
+                    }, 10);
+                });
+
+        </script>
+
+    </body>
+</html>
