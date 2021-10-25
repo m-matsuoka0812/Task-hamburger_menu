@@ -450,6 +450,9 @@ body {
   height: 100%;
   background-color: #FFFDFA;
 }
+body.is-fixed {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -517,7 +520,7 @@ footer {
   }
 }
 .l-contents__left.is-open {
-  position: fixed;
+  position: relative;
   overflow-y: auto;
 }
 .l-contents__left.is-open::before {
@@ -547,10 +550,12 @@ footer {
   }
 }
 .l-contents__right.is-open {
+  position: fixed;
+  bottom: 0;
+  overflow-y: auto;
   -webkit-animation: SlideIn 0.5s;
           animation: SlideIn 0.5s;
   display: block;
-  position: relative;
   top: 0;
   z-index: 200;
   left: 56%;

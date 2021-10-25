@@ -1,12 +1,13 @@
 //tab,sp時のサイドバー設定
 
-$('.p-bar__button, .c-button__close').click(function(){
-    $('.c-button__close, .l-contents__right').toggleClass('is-open');
+$('.p-bar__button, .c-button__close').on('click',function(){
+    $('.c-button__close, .l-contents__right, .l-contents__left, .l-contents').toggleClass('is-open');
+    $('body').toggleClass('is-fixed')
 });
 
 let timer = 0;
 let currentWidth = window.innerWidth;
-    $(window).resize(function(){
+    $(window).on('resize',function(){
         if (currentWidth == window.innerWidth) {
             return;
         }

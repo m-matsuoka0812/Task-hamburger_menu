@@ -28,8 +28,7 @@
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/JavaScript.js"></script> -->
+        <!-- <script src="../js/jquery-3.6.0.min.js"></script>-->
        
     </head>
     
@@ -165,28 +164,7 @@
             <small>Copyright: RaiseTech</small>
         </footer>
         
-        <script>
-            
-            $('.p-bar__button, .c-button__close').click(function(){
-                $('.c-button__close, .l-contents__right, .l-contents__left, .l-contents').toggleClass('is-open');
-            });
-
-            let timer = 0;
-            let currentWidth = window.innerWidth;
-                $(window).resize(function(){
-                    if (currentWidth == window.innerWidth) {
-                        return;
-                    }
-                    if (timer > 0) {
-                        clearTimeout(timer);
-                    }
-
-                    timer = setTimeout(function () {
-                        location.reload();
-                    }, 10);
-                });
-
-        </script>
+        <script src="../js/jquery.js"></script>
 
     </body>
 </html>
