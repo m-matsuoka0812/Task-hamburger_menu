@@ -1,7 +1,7 @@
 //tab,sp時のサイドバー設定
 
 $('.p-bar__button, .c-button__close').on('click',function(){
-    $('.c-button__close, .l-contents__right, .l-contents__left, .l-contents').toggleClass('is-open');
+    $('.c-button__close, .l-main__right, .l-main__left, .l-main').toggleClass('is-open');
     $('body').toggleClass('is-fixed')
 });
 

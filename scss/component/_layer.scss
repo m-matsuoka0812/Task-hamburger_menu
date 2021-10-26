@@ -1,4 +1,6 @@
-.c-layer1 {
+//front-page map画像設定
+
+.c__layer__map {
     position: absolute;
     top: 0;
     width: 100%;
@@ -6,7 +8,7 @@
     background-color: rgba(#000000, 0.3);
     z-index: 10;
 }
-.c-layer2 {
+.c__layer__map-rgba {
     position: absolute;
     top: 0;
     width: 60%;

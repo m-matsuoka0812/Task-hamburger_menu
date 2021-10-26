@@ -1,25 +1,6 @@
+//single設定
+
 .c-wrap {
-    height: 174px;
-    background-color: rgba(#fff, 0.6);
-    margin-top: 20px;
-    h4 {
-        font-family: "m-plus-1m", sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 22px 19px;
-        color: #3C2A10;
-        margin: 0;
-    }
-    p {
-        font-family: "m-plus-1m", sans-serif;
-        font-style: regular;
-        font-size: 1rem;
-        padding: 0 19px;
-        color: #3C2A10;
-        line-height: 1.5;
-        margin: 0;
-    }
-    //single設定
     &__table {
         padding: 60px 5.2%;
         @include tab {
@@ -62,3 +43,5 @@
         }
     }
 }
+    
+    

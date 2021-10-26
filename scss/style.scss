@@ -8,7 +8,7 @@
 // Global
 
 // Layout
-@import './layout/contents';
+@import './layout/main';
 @import './layout/footer';
 @import './layout/header';
 @import './layout/sidebar';
@@ -16,15 +16,16 @@
 // Component
 @import './component/button';
 @import './component/layer';
+@import './component/media';
 @import './component/wrap';
 
 // Project
 @import './project/archive';
 @import './project/bar';
+@import './project/comments';
 @import './project/front';
 @import './project/page';
 @import './project/pagination';
-@import './project/picture';
 @import './project/single';
 
 // Utility

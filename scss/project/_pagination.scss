@@ -12,10 +12,11 @@
         padding-bottom: 34px;
     };
     @include sp {
-        padding-top: 39.5px;
-        padding-bottom: 31px;
+        padding-top: 49px;
+        padding-bottom: 30px;
+        height: 95px;
     }
-    > p {
+    &__current__page {
         font-family: "roboto", sans-serif;
         font-size: 1rem;
         padding: 0 19.3px 0 0;
@@ -23,7 +24,7 @@
             display: none;
         };   
     }
-    ul {
+    &__list {
         display: flex;
         width: auto;
         flex-direction: row;        
@@ -34,7 +35,7 @@
             justify-content: space-between;
             padding: 0 20.2px
         };
-        .p-paginaition__page {
+        .p-pagination__page {
             border: solid 1px #3C2B1C;
             margin-right: 15px;
             @include sp {
@@ -60,7 +61,7 @@
                     }
                 }
             }
-            a {
+            .p-pagination__page__number {
                 font-family: "roboto", sans-serif;
                 font-size: 1rem;
                 display: block;
@@ -75,9 +76,12 @@
                 /*p {
                     display: none;
                     @include sp {
+                        display: block;
                         font-family: "m-plus-1m", sans-serif;
                         font-size: 1rem;
-                        display: block;
+                        font-weight: normal;
+                        color: #707070;
+                        margin-left: 7.3px;
                     };
                 }*/
             }
@@ -92,16 +96,24 @@
                 @include sp {
                     margin: 0;
                 };
-                p {
-                    display: none;
+                .p-pagination__page__link-1 {
                     @include sp {
-                        display: block;
-                        font-family: "m-plus-1m", sans-serif;
-                        font-size: 1rem;
-                        font-weight: normal;
-                        color: #707070;
-                        margin-left: 7.3px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
                     };
+                    .p-pagination__previous {
+                        display: none;
+                        @include sp {
+                            display: block;
+                            font-family: "m-plus-1m", sans-serif;
+                            font-size: 1rem;
+                            font-weight: normal;
+                            color: #707070;
+                            margin-left: 7.3px;
+                        };
+                    }
                 }
             }
             &:last-of-type {
@@ -109,7 +121,7 @@
                 @include sp {
                     margin: 0;
                 }
-                p {
+                .p-pagination__next {
                     display: none;
                     @include sp {
                         display: block;

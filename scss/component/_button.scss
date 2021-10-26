@@ -1,6 +1,35 @@
+//archive card:button
+
+.c-button__archive {
+    display: block;
+    width: 292px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 40px auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    @include tab {
+        padding: 13px;
+        padding: 12.5px;
+        width: 163.16px;
+    };
+    @include sp {
+        margin: 15px 93px 43.7px 79.9px;
+    };
+    a {
+        font-family: "m-plus-1m", sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #707070;
+    }
+}
+
 //single.html内ボタン
 
-.c-button {
+.c-button__single {
     width: 100%;
     padding-left: 5.2%;
     padding-bottom: 60px;
@@ -28,22 +57,22 @@
             }
         }
     }
-    &__comment {
-        padding-left: 5.2%;
-        padding-bottom: 353px;
-        font-size: 1rem;
-        font-family: "m-plus-1m", sans-serif;
-        font-weight: bold;
-        color: #3C2A10;
-        @include tab {
-            padding-left: 7.2%;
-            padding-bottom: 228px;
-            @include sp {
-                padding-left: 5.3%;
-                padding-bottom: 177px;
-            }
-        };
-    }
+}
+.c-button__comment {
+    padding-left: 5.2%;
+    padding-bottom: 353px;
+    font-size: 1rem;
+    font-family: "m-plus-1m", sans-serif;
+    font-weight: bold;
+    color: #3C2A10;
+    @include tab {
+        padding-left: 7.2%;
+        padding-bottom: 228px;
+    };
+    @include sp {
+        padding-left: 5.3%;
+        padding-bottom: 177px;
+    };
 }
 
 //sidebarメニュー×ボタン
