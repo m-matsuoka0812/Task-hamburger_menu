@@ -5,27 +5,27 @@
 @import './foundation/mixin';
 @import './foundation/base';
 
-// Global
-
 // Layout
 @import './layout/main';
 @import './layout/footer';
 @import './layout/header';
 @import './layout/sidebar';
 
-// Component
-@import './component/button';
-@import './component/layer';
-@import './component/media';
-@import './component/wrap';
 
-// Project
-@import './project/archive';
-@import './project/bar';
-@import './project/comments';
-@import './project/front';
-@import './project/page';
-@import './project/pagination';
-@import './project/single';
 
-// Utility
+// object/component
+@import './object/component/button';
+@import './object/component/layer';
+@import './object/component/media';
+@import './object/component/wrap';
+
+// object/project
+@import './object/project/archive';
+@import './object/project/bar';
+@import './object/project/comments';
+@import './object/project/front';
+@import './object/project/page';
+@import './object/project/pagination';
+@import './object/project/single';
+
+// object/utility
