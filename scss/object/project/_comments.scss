@@ -1,18 +1,19 @@
 //archive・archive-search comments設定
+@use "../../foundation/mixin";
 
 .c-comments {
     padding: 60px 6.44% 70px 6.44%;
-    @include tab {
+    @include mixin.breakpoint( tablet ) {
         padding: 36px 6.44% 37px 6.44%;
     };
-    @include sp {
+    @include mixin.breakpoint( sp ) {
         padding: 30px 4.8% 19px 4.8%;
     };
     &__title {
         font-family: "m-plus-1m", sans-serif;
         font-size: 2.25rem;
         font-weight: bold;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             font-size: 1.75rem;
         };
     }
@@ -21,7 +22,7 @@
         font-size: 1rem;
         padding-top: 25px;
         line-height: 1.8;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             padding-top: 30px;
         };
     }
@@ -32,7 +33,7 @@
 .c-comments{
     &__block {
         padding: 60px 5.2%;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             padding: 60px 7.2%;
         }
         &__text {
@@ -65,7 +66,7 @@
             background-color: #F5F5F5;
             font-family: "m-plus-1m", sans-serif;
             padding: 60px 3.1% 60px 2.6%;
-            @include tab {
+            @include mixin.breakpoint( tablet ) {
                 padding: 60px 6.7% 60px 6%;
             }
             * {
@@ -91,10 +92,10 @@
         width: 100%;
         display: flex;
         padding: 0 0 60px 0;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             padding: 60px 0 57px 0;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             height: 170px;
             margin-bottom: 30px;
             padding: 0;

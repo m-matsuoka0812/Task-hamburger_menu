@@ -1,4 +1,5 @@
 //page_top・text設定
+@use "../../foundation/mixin";
 
 .p-page {
 &__top {
@@ -10,7 +11,7 @@
         color: #FFFFFF;
         font-size: 3.75rem;
         padding-left: 4.5%;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             font-size: 2.25rem;
             padding-left: 3.1%;
         };

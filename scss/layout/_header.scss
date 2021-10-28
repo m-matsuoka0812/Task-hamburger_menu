@@ -1,3 +1,5 @@
+@use "../foundation/mixin";
+
 .l-header {
     width: 100%;
     height: 217px;
@@ -5,14 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include tab {
+    @include mixin.breakpoint( tablet ) {
         //margin-top: 60px;
         flex-direction: column;
         justify-content: space-around;
     };
     &__left {
         margin: 0 3rem;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             margin: 0;
         };
         a {
@@ -23,11 +25,11 @@
                 font-size: 4rem;
                 font-weight: 200;
                 text-decoration: none;
-                @include tab {
+                @include mixin.breakpoint( tablet ) {
                     font-size: 2.5rem;
                     margin: 40px 0 38px 0;
                 };
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     margin: 40px 86px 38px 86px;
                 }
             }
@@ -36,7 +38,7 @@
     &__form {
         margin-right: 30px;
         display: flex;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             margin-bottom: 40px;
         };
         &__box {
@@ -48,11 +50,11 @@
             font-size: 1.0rem;
             font-weight: 500;
             margin-right: 0.875rem;
-            @include tab {
+            @include mixin.breakpoint( tablet ) {
                 left: 17.2%;
                 margin-right: 1.7%;
             };
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 230px;
                 left: 6.4%;
                 margin-right: 3.2%;
@@ -70,10 +72,10 @@
             cursor: pointer;
             text-align: center;
             margin-bottom: 3px;
-            @include tab {
+            @include mixin.breakpoint( tablet ) {
                 right: 17.2%;
             };
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 78px;
                 right: 8.3%;
             };

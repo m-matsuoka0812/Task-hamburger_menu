@@ -1,4 +1,5 @@
 //全HTML共通
+@use "../foundation/mixin";
 
 .l-main {
     display: flex;
@@ -6,7 +7,7 @@
         width:  80%;
         height: 100%;
         min-height: 100vh;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             width: 100%;
         };
         &.is-open {
@@ -26,11 +27,11 @@
         width: 20%;
         background-color: #F2EDE9;
         max-height: 100%; /*footer:150pxを加味したら95％になります*/
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             position: fixed;
             left: 100%;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             position: fixed;
             left: 100%;
         };
@@ -44,7 +45,7 @@
             z-index: 200;
             left: 56%;
             width: 44%;
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 left: 12%;
                 width: 88%;
             };

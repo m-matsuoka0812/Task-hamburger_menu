@@ -1,4 +1,5 @@
 //front-page 画像設定
+@use "../../foundation/mixin";
 
 .c-media {
     &__top__front {
@@ -7,7 +8,7 @@
         background-image: url("../img/front-page-ダミーサイト.jpg");
         background-size: cover;
         background-position: center;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             height: 285px;
         };
     }
@@ -15,13 +16,12 @@
         background-image: url("../img/front_flex_left.jpg");
         background-size: cover;
         background-position: center;
-        height: 100%;
-        margin-right: 2.5%;
-        margin-left: 7%;
-        @include tab {
-            margin: 0 4.8%;
+        //height: 100%;
+        margin: 8.3% 2.5% 9.3% 0;
+        @include mixin.breakpoint( tablet ) {
+            margin: 4.8% 4.8% 4.8% 0;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             height: 50%;
             margin: 0 0 20px 0;
         };
@@ -30,13 +30,12 @@
         background-image: url("../img/front_flex_right.jpg");
         background-size: cover;
         background-position: center;
-        height: 100%;
-        margin-left: 2.5%;
-        margin-right: 7%;
-        @include tab {
-            margin-right: 4.8%;
+        //height: 100%;
+        margin: 8.3% 0 9.3% 2.5%;
+        @include mixin.breakpoint( tablet ) {
+            margin: 4.8% 0;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             height: 50%;
             margin: 0;
         };
@@ -56,7 +55,7 @@
         background-size: cover;
         background-position: center;
         z-index: -5;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             height: 283px;
         }
         &::before {
@@ -75,7 +74,7 @@
         overflow: hidden;
         object-fit: cover;
         object-position: left;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             background-size: cover;
             background-position: center;
         };
@@ -95,7 +94,7 @@
         object-position: center;
         display: flex;
         z-index: -5;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             height: 225px;
             background-size: 190%;
         };
@@ -110,12 +109,12 @@
         object-position: bottom;
         margin-bottom: 60px;
         //padding: 0 5.2% 60px 5.2%;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             max-height: 264px;
             margin-bottom: 0;
             //padding: 0 7.2%;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             max-height: 154px;
             margin-bottom: 30px;
             //padding: 0 5.3% 30px 5.3%;
@@ -127,11 +126,11 @@
         object-fit: contain;
         object-position: top;
         padding-right: 2%;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             width: 43%;
             padding-right: 2.5%;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             width: 45%;
             padding-right: 2.4%;
         };
@@ -147,11 +146,11 @@
             object-fit: contain;
             object-position: top;
             padding-left: 2%;
-            @include tab {
+            @include mixin.breakpoint( tablet ) {
                 width: 43%;
                 padding-left: 2.5%;
             };
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 45%;
                 padding-left: 2.4%;
             };
@@ -163,18 +162,18 @@
     &__half {
         margin-bottom: 60px;
         text-align: center;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             padding-top: 4px;
             margin-bottom: 241px;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             padding-top: 0;
             margin-bottom: 30px;
         }
         img {
             width: 581px;
             height: auto;
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 72%;
             };
         }
@@ -185,7 +184,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 5.05% 0 5.2%;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             padding: 0 7.2%;
             display: grid;
             justify-items: center;
@@ -194,18 +193,18 @@
             flex-wrap: none;
             justify-content: none;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             grid-template-columns: repeat(1, 1fr);
             row-gap: 20px;
         }
         img {
             width: 32%;
             margin-bottom: 20px;
-            @include tab {
+            @include mixin.breakpoint( tablet ) {
                 width: 100%;
                 margin-bottom: 0;
             };
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 100%;
             }
         }
@@ -225,7 +224,7 @@
         object-position: center;
         display: flex;
         z-index: -5;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             height: 225px;
             background-size: 190%;
         };

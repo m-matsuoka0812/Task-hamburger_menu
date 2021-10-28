@@ -1,31 +1,16 @@
 /* SCSS */
 
 // Foundation
-@import './foundation/reset';
-@import './foundation/mixin';
-@import './foundation/base';
+@use "foundation";
 
 // Layout
-@import './layout/main';
-@import './layout/footer';
-@import './layout/header';
-@import './layout/sidebar';
+@use "layout";
 
+// object
+//// component
+@use "./object/component";
 
+//// project
+@use "./object/project";
 
-// object/component
-@import './object/component/button';
-@import './object/component/layer';
-@import './object/component/media';
-@import './object/component/wrap';
-
-// object/project
-@import './object/project/archive';
-@import './object/project/bar';
-@import './object/project/comments';
-@import './object/project/front';
-@import './object/project/page';
-@import './object/project/pagination';
-@import './object/project/single';
-
-// object/utility
+//// utility

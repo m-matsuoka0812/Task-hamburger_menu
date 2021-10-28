@@ -1,5 +1,82 @@
 @charset "UTF-8";
-/* SCSS */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 要素の全体の幅と高さの計算方法の設定 */
+  font-size: 16px;
+  /* 「border-box」コンテンツ内に収める */
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "m-plus-1m", "roboto", sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFDFA;
+}
+body.is-fixed {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #5997d9;
+}
+
+img {
+  vertical-align: middle;
+  /*画像の下の余白を削除*/
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@-webkit-keyframes SlideIn {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -407,170 +484,6 @@ li {
   list-style-type: none;
 }
 
-/*
-@mixin breakpoint( $point ) {
-    @if $point == tablet {
-        @media ( max-width: 1024px ) {
-            @content ;
-        }
-    }
-    @if $point == sp {
-        @media ( max-width: 599px ) {
-            @content ;
-        }   
-    }
-}
-
-SCSSには
-@include mixin.breakpoint( tablet ) {
-     〇〇〇〇〇〇〇〇: 〇〇〇;
-}
-*/
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 要素の全体の幅と高さの計算方法の設定 */
-  font-size: 16px;
-  /* 「border-box」コンテンツ内に収める */
-  width: 100%;
-  height: 100%;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  font-family: "m-plus-1m", "roboto", sans-serif;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FFFDFA;
-}
-body.is-fixed {
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-  list-style: none;
-}
-
-a:hover,
-a:active,
-a:focus {
-  text-decoration: none;
-  color: #5997d9;
-}
-
-img {
-  vertical-align: middle;
-  /*画像の下の余白を削除*/
-}
-
-li {
-  list-style-type: none;
-}
-
-footer {
-  margin-top: auto;
-}
-
-@-webkit-keyframes SlideIn {
-  0% {
-    opacity: 0.8;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  100% {
-    opacity: 0.8;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes SlideIn {
-  0% {
-    opacity: 0.8;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  100% {
-    opacity: 0.8;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-.l-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.l-main__left {
-  width: 80%;
-  height: 100%;
-  min-height: 100vh;
-}
-@media (max-width: 1024px) {
-  .l-main__left {
-    width: 100%;
-  }
-}
-.l-main__left.is-open {
-  position: relative;
-  overflow-y: auto;
-}
-.l-main__left.is-open::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 199;
-}
-.l-main__right {
-  width: 20%;
-  background-color: #F2EDE9;
-  max-height: 100%;
-  /*footer:150pxを加味したら95％になります*/
-}
-@media (max-width: 1024px) {
-  .l-main__right {
-    position: fixed;
-    left: 100%;
-  }
-}
-@media (max-width: 599px) {
-  .l-main__right {
-    position: fixed;
-    left: 100%;
-  }
-}
-.l-main__right.is-open {
-  position: fixed;
-  bottom: 0;
-  overflow-y: auto;
-  -webkit-animation: SlideIn 0.5s;
-          animation: SlideIn 0.5s;
-  display: block;
-  top: 0;
-  z-index: 200;
-  left: 56%;
-  width: 44%;
-}
-@media (max-width: 599px) {
-  .l-main__right.is-open {
-    left: 12%;
-    width: 88%;
-  }
-}
-.l-main.is-open {
-  position: relative;
-}
-
 .l-footer {
   width: 100%;
   height: 150px;
@@ -625,6 +538,27 @@ footer {
   font-size: 0.875rem;
 }
 
+/*
+$tab: 1024px;
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }   
+}
+
+$sp: 599px;
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+*/
+/*
+SCSSには
+@include mixin.breakpoint( tablet ) {
+     〇〇〇〇〇〇〇〇: 〇〇〇;
+}
+*/
 .l-header {
   width: 100%;
   height: 217px;
@@ -740,6 +674,73 @@ footer {
 .fa-search {
   color: #808080;
   padding-left: 10px;
+}
+
+.l-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.l-main__left {
+  width: 80%;
+  height: 100%;
+  min-height: 100vh;
+}
+@media (max-width: 1024px) {
+  .l-main__left {
+    width: 100%;
+  }
+}
+.l-main__left.is-open {
+  position: relative;
+  overflow-y: auto;
+}
+.l-main__left.is-open::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 199;
+}
+.l-main__right {
+  width: 20%;
+  background-color: #F2EDE9;
+  max-height: 100%;
+  /*footer:150pxを加味したら95％になります*/
+}
+@media (max-width: 1024px) {
+  .l-main__right {
+    position: fixed;
+    left: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .l-main__right {
+    position: fixed;
+    left: 100%;
+  }
+}
+.l-main__right.is-open {
+  position: fixed;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-animation: SlideIn 0.5s;
+          animation: SlideIn 0.5s;
+  display: block;
+  top: 0;
+  z-index: 200;
+  left: 56%;
+  width: 44%;
+}
+@media (max-width: 599px) {
+  .l-main__right.is-open {
+    left: 12%;
+    width: 88%;
+  }
+}
+.l-main.is-open {
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -954,13 +955,11 @@ footer {
   background-image: url("../img/front_flex_left.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
-  margin-right: 2.5%;
-  margin-left: 7%;
+  margin: 8.3% 2.5% 9.3% 0;
 }
 @media (max-width: 1024px) {
   .c-media__takeout {
-    margin: 0 4.8%;
+    margin: 4.8% 4.8% 4.8% 0;
   }
 }
 @media (max-width: 599px) {
@@ -973,13 +972,11 @@ footer {
   background-image: url("../img/front_flex_right.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
-  margin-left: 2.5%;
-  margin-right: 7%;
+  margin: 8.3% 0 9.3% 2.5%;
 }
 @media (max-width: 1024px) {
   .c-media__eatin {
-    margin-right: 4.8%;
+    margin: 4.8% 0;
   }
 }
 @media (max-width: 599px) {
@@ -1574,13 +1571,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8.3%;
-  padding-bottom: 9.3%;
+  padding: 0 7%;
 }
 @media (max-width: 1024px) {
   .p-front__flex {
-    height: 761px;
-    padding: 5.25% 0;
+    height: 935px;
+    padding: 0 4.8%;
   }
 }
 @media (max-width: 599px) {
@@ -1593,7 +1589,6 @@ footer {
 .p-front__flex__section {
   position: relative;
   width: 100%;
-  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .p-front__flex h2 {
@@ -2281,5 +2276,7 @@ footer {
   color: #3C2A10;
   line-height: 1.6;
 }
+
+/* SCSS */
 
 /*# sourceMappingURL=style.css.map */

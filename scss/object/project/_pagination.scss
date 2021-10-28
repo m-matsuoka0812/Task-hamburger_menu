@@ -1,4 +1,5 @@
 //archive,archive-search設定
+@use "../../foundation/mixin";
 
 .p-pagination {
     width: 100%;
@@ -8,10 +9,10 @@
     flex-direction: row;
     color: #707070;
     padding: 75.5px 0 64px 0;
-    @include tab {
+    @include mixin.breakpoint( tablet ) {
         padding-bottom: 34px;
     };
-    @include sp {
+    @include mixin.breakpoint( sp ) {
         padding-top: 49px;
         padding-bottom: 30px;
         height: 95px;
@@ -20,7 +21,7 @@
         font-family: "roboto", sans-serif;
         font-size: 1rem;
         padding: 0 19.3px 0 0;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             display: none;
         };   
     }
@@ -30,7 +31,7 @@
         flex-direction: row;        
         justify-content: center; 
         align-items: center;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             width: 100%;
             justify-content: space-between;
             padding: 0 20.2px
@@ -38,7 +39,7 @@
         .p-pagination__page {
             border: solid 1px #3C2B1C;
             margin-right: 15px;
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 display: flex;          
                 flex-direction: row; 
                 justify-content: space-between; 
@@ -51,12 +52,12 @@
             }
             &:nth-of-type(2){
                 background-color: #3C2B1C;
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     display: none;
                 }
                 a{
                     color: #FFFFFF;
-                    @include sp {
+                    @include mixin.breakpoint( sp ) {
                         display: none;
                     }
                 }
@@ -67,7 +68,7 @@
                 display: block;
                 color: #707070;
                 padding: 7px 13px;
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     font-family: "m-plus-1m", sans-serif;
                     padding: 0;
                     display: flex;
@@ -87,17 +88,17 @@
             }
             &:not(:first-of-type):not(:last-of-type) {
                 display: flex;
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     display: none
                 };
             };
             &:first-of-type {
                 margin-right: 17.2px;
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     margin: 0;
                 };
                 .p-pagination__page__link-1 {
-                    @include sp {
+                    @include mixin.breakpoint( sp ) {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
@@ -105,7 +106,7 @@
                     };
                     .p-pagination__previous {
                         display: none;
-                        @include sp {
+                        @include mixin.breakpoint( sp ) {
                             display: block;
                             font-family: "m-plus-1m", sans-serif;
                             font-size: 1rem;
@@ -118,12 +119,12 @@
             }
             &:last-of-type {
                 margin-left: 4.3px;
-                @include sp {
+                @include mixin.breakpoint( sp ) {
                     margin: 0;
                 }
                 .p-pagination__next {
                     display: none;
-                    @include sp {
+                    @include mixin.breakpoint( sp ) {
                         display: block;
                         font-family: "m-plus-1m", sans-serif;
                         font-size: 1rem;

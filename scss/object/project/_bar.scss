@@ -1,4 +1,5 @@
 //レスポンシブ化に伴うサイドバー設定
+@use "../../foundation/mixin";
 
 .p-bar {
     display: none;
@@ -8,7 +9,7 @@
     z-index: 100;
     //background-color: #fff7ef;
     text-align: right;
-    @include tab {
+    @include mixin.breakpoint( tablet ) {
         display: block;
     };
     &__button {
@@ -22,7 +23,7 @@
         cursor: pointer;
         background-color: #fff7ef;
         border: none;
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             font-size: 1.25rem;
         };
     }

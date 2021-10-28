@@ -1,12 +1,13 @@
 //single設定
+@use "../../foundation/mixin";
 
 .c-wrap {
     &__table {
         padding: 60px 5.2%;
-        @include tab {
+        @include mixin.breakpoint( tablet ) {
             padding: 60px 7.2%;
         };
-        @include sp {
+        @include mixin.breakpoint( sp ) {
             padding: 30px 5.3%;
         }
         table {
@@ -23,7 +24,7 @@
                     text-align: inherit;
                     width: 31.6%;
                     height: 77px;
-                    @include sp {
+                    @include mixin.breakpoint( sp ) {
                         padding: 28px 0 27px 0;
                         text-align: center;
                     };
@@ -35,7 +36,7 @@
                     text-align: inherit;
                     width: 68.4%;
                     height: 77px;
-                    @include sp {
+                    @include mixin.breakpoint( sp ) {
                         padding: 28px 0 27px 30px;
                     };  
                 }
