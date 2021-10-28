@@ -910,7 +910,7 @@ SCSSには
   height: 5px;
 }
 
-.c__layer__map {
+.c_layer__map {
   position: absolute;
   top: 0;
   width: 100%;
@@ -919,7 +919,7 @@ SCSSには
   z-index: 10;
 }
 
-.c__layer__map-rgba {
+.c_layer__map-rgba {
   position: absolute;
   top: 0;
   width: 60%;
@@ -928,12 +928,12 @@ SCSSには
   z-index: 5;
 }
 @media (max-width: 1024px) {
-  .c__layer__map-rgba {
+  .c_layer__map-rgba {
     width: 100%;
   }
 }
 @media (max-width: 599px) {
-  .c__layer__map-rgba {
+  .c_layer__map-rgba {
     width: 100%;
     height: 60%;
   }
