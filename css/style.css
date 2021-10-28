@@ -795,7 +795,7 @@ SCSSには
   padding: 30px;
   background-color: #fff;
   border-radius: 50px;
-  margin: 40px auto;
+  margin: 0 auto;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -805,14 +805,14 @@ SCSSには
 }
 @media (max-width: 1024px) {
   .c-button__archive {
-    padding: 13px;
-    padding: 12.5px;
+    padding: 13px 0;
+    margin: 0 auto;
     width: 163.16px;
   }
 }
 @media (max-width: 599px) {
   .c-button__archive {
-    margin: 15px 93px 43.7px 79.9px;
+    margin: 0 6% 0 auto;
   }
 }
 .c-button__archive a {
@@ -1345,7 +1345,7 @@ SCSSには
 @media (max-width: 599px) {
   .p-archive__card__intro {
     height: 354.6px;
-    padding: 31.5px 21.75% 43.7px 5.05%;
+    padding: 31.5px 21.7% 43.7px 5%;
   }
 }
 .p-archive__card__intro h3 {
@@ -1386,12 +1386,15 @@ SCSSには
 @media (max-width: 1024px) {
   .p-archive__card__intro p {
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 }
 @media (max-width: 599px) {
   .p-archive__card__intro p {
     padding-bottom: 0;
+    margin-bottom: 40px;
+    overflow: hidden;
+    height: 114px;
   }
 }
 
@@ -1454,6 +1457,7 @@ SCSSには
   font-size: 1rem;
   padding-top: 25px;
   line-height: 1.8;
+  text-align: justify;
 }
 @media (max-width: 599px) {
   .c-comments__text {

@@ -7,18 +7,18 @@
     padding: 30px;
     background-color: #fff;
     border-radius: 50px;
-    margin: 40px auto;
+    margin: 0 auto;
     text-align: center;
     cursor: pointer;
     outline: none;
     appearance: none;
     @include mixin.breakpoint( tablet ) {
-        padding: 13px;
-        padding: 12.5px;
+        padding: 13px 0;
+        margin: 0 auto;
         width: 163.16px;
     };
     @include mixin.breakpoint( sp ) {
-        margin: 15px 93px 43.7px 79.9px;
+        margin: 0 6% 0 auto;
     };
     a {
         font-family: "m-plus-1m", sans-serif;

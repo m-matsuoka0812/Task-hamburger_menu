@@ -22,6 +22,7 @@
         font-size: 1rem;
         padding-top: 25px;
         line-height: 1.8;
+        text-align: justify;
         @include mixin.breakpoint( sp ) {
             padding-top: 30px;
         };

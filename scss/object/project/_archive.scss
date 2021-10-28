@@ -55,7 +55,7 @@
             };
             @include mixin.breakpoint( sp ) {
                 height: 354.6px;
-                padding: 31.5px 21.75% 43.7px 5.05%;
+                padding: 31.5px 21.7% 43.7px 5%;
             };
             h3 {
                 font-family: "m-plus-1m", sans-serif;
@@ -89,10 +89,13 @@
                 line-height: 1.6;
                 @include mixin.breakpoint( tablet ) {
                     padding-top: 10px;
-                    padding-bottom: 40px;
+                    padding-bottom: 45px;
                 };
                 @include mixin.breakpoint( sp ) {
                     padding-bottom: 0;
+                    margin-bottom: 40px;
+                    overflow: hidden;
+                    height: 114px;
                 }
             }
         }
