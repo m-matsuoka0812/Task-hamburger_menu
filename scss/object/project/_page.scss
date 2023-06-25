@@ -1,39 +1,25 @@
 //page_top・text設定
+@use "../../foundation/mixin";
 
 .p-page {
-    &__top {
-        width: 100%;
-        height: 500px;
-        position: relative;
-        background: url(../img/page-ショップについて.jpg) no-repeat center;
-        overflow: hidden;
-        object-fit: cover;
-        object-position: center;
-        display: flex;
-        z-index: -5;
-        @include sp {
-            height: 225px;
-            background-size: 190%;
+&__top {
+    display: flex;
+    align-items: center;
+    .p-page__title {
+        font-family: "m-plus-1m", sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 3.75rem;
+        padding-left: 4.5%;
+        @include mixin.breakpoint( sp ) {
+            font-size: 2.25rem;
+            padding-left: 3.1%;
         };
-        &__text {
-            display: flex;
-            align-items: center;
-            padding-left: 4.5%;
-            @include sp {
-                padding-left: 3.1%;
-            };
-            h1 {
-                font-family: "m-plus-1m", sans-serif;
-                font-weight: bold;
-                color: #FFFFFF;
-                font-size: 3.75rem;
-                @include sp {
-                    font-size: 2.25rem;
-                };
-            }
-        }
     }
-    &__wrap {
+}
+    
+    
+    /*&__wrap {
         padding: 60px 5.2%;
         @include tab {
             padding: 60px 7.2%;
@@ -158,5 +144,5 @@
                 line-height: 1.6;
             }
         }
-    }
+    }*/
 }

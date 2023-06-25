@@ -1,13 +1,43 @@
+//archive card:button
+@use "../../foundation/mixin";
+
+.c-button__archive {
+    display: block;
+    width: 292px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    @include mixin.breakpoint( tablet ) {
+        padding: 13px 0;
+        margin: 0 auto;
+        width: 163.16px;
+    };
+    @include mixin.breakpoint( sp ) {
+        margin: 0 6% 0 auto;
+    };
+    a {
+        font-family: "m-plus-1m", sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #707070;
+    }
+}
+
 //single.html内ボタン
 
-.c-button {
+.c-button__single {
     width: 100%;
     padding-left: 5.2%;
     padding-bottom: 60px;
-    @include tab {
+    @include mixin.breakpoint( tablet ) {
         padding-left: 7.2%;
     };
-    @include sp {
+    @include mixin.breakpoint( sp ) {
         padding: 0 5.3% 30px 5.3%;
     };
     button {
@@ -22,28 +52,28 @@
             font-size: 1rem;
             line-height: 104px;
             text-align: center;
-            @include sp {
+            @include mixin.breakpoint( sp ) {
                 width: 335px;
                 line-height: 77px;
             }
         }
     }
-    &__comment {
-        padding-left: 5.2%;
-        padding-bottom: 353px;
-        font-size: 1rem;
-        font-family: "m-plus-1m", sans-serif;
-        font-weight: bold;
-        color: #3C2A10;
-        @include tab {
-            padding-left: 7.2%;
-            padding-bottom: 228px;
-            @include sp {
-                padding-left: 5.3%;
-                padding-bottom: 177px;
-            }
-        };
-    }
+}
+.c-button__comment {
+    padding-left: 5.2%;
+    padding-bottom: 353px;
+    font-size: 1rem;
+    font-family: "m-plus-1m", sans-serif;
+    font-weight: bold;
+    color: #3C2A10;
+    @include mixin.breakpoint( tablet ) {
+        padding-left: 7.2%;
+        padding-bottom: 228px;
+    };
+    @include mixin.breakpoint( sp ) {
+        padding-left: 5.3%;
+        padding-bottom: 177px;
+    };
 }
 
 //sidebarメニュー×ボタン
